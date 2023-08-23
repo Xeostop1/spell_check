@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>한영 변환</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/index.css') }}"
+    />
+    <script src="{{ url_for('static', filename='script/index.js') }}"></script>
+  </head>
+  <body>
+    <div id="wrap">
+      </div>
+      <form onsubmit="submitForm()">
+        <label for="text">검사할 텍스트:</label>
+        <input type="text" id="text" name="text" />
+        <input type="submit" value="한영검사" />
+      </form>
+      <div id="result">
+        <p id="input-text">입력한 텍스트:</p>
+        <p id="original">잘못된 단어:</p>
+        <p id="corrected">수정된 단어:</p>
+      </div>
+    </div>
+  </body>
+</html>

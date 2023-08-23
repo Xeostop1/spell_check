@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="{{ url_for('static', filename='./script/index.js') }}"></script>
+    <title>한영변환</title>
+  </head>
+  <body>
+    <div id="wrap">
+      <form action="/spell_check" method="post" onsubmit="return false;">
+        <h3>한영변환</h3>
+        <label for="text">검사할 텍스트:</label>
+        <input type="text" name="input_text" id="input_text" />
+        <button type="button" onclick="submitForm()">한영검사</button>
+      </form>
+      <div id="result">
+        <p class="original">입력한 텍스트:</p>
+        <p class="corrected">수정할 텍스트:</p>
+      </div>
+    </div>
+  </body>
+</html>
