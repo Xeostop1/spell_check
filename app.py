@@ -20,7 +20,7 @@ def spell_check():
         # the rest of your code...
     else:
         return "Request body is not in JSON format", 400
-
+    # 여기는 클라키가 되는데 거기는 왜 안돼지? 진짜 알수가 없다 내가~~~ 
     client_id = "R2vZPeiWgP9lcZJwwK0X"
     client_secret = "4mSlbIg6_W"
 
